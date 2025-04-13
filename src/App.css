@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0px 30px;
+}
+
+.container {
+  margin-top: 20px;
+  background-color: rgb(17, 18, 79);
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  color: rgb(177, 235, 236);
+}
+
+
+.flagContainer {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items:center;
+  align-items: center;
+  background-color: #f0f0f0;
+  
+}
+
+
+
+.flag {
+  /* width: 400px; */
+  width: 100%;
+  min-height: 200px;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(19, 114, 230, 0.841);
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+.loadMore{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/-1;
+
+}
+
+
+
+.loadMoreBtn {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(28, 92, 189);
+  color: white;
+  border-radius: 6px ;
+  
+}
+
+.disable{
+  
+  cursor: pointer;
+  cursor: not-allowed;
+  background-color: rgb(218, 215, 215);
+  color: rgba(158, 141, 141, 0.759);
+  border: none;
+
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(100px); /* Start slightly below */
+  animation: fadeIn 2s ease forwards ;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: rotate(10deg) scale(0.5);
+    /* transform: translateY(20px); */
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+    transform: translateY(0) scale(1) ;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width :425px){
+   .flagContainer{
+    grid-template-columns: repeat(1,1fr);
+   }
+
+   .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+   }
+   .title{
+    text-align: center;
+    font-size: 26px;
+   }
+
+
+}
