@@ -1,6 +1,6 @@
 #live link  
 
-https://asiancountriesbyfetchapii.netlify.app/
+https://asiancountriesbyfetchapi.netlify.app/
 
 
 
@@ -9,7 +9,7 @@ https://asiancountriesbyfetchapii.netlify.app/
 This project is a React-based web application that displays information about all countries in Asia. The data is fetched using the REST Countries API and includes details such as the country's name, capital, population, and flag. The application also allows users to load more countries dynamically with animations and sort them alphabetically for better user experience.
 
 ## Live Demo
-Check out the live project here: [Asian Countries Project](https://asiancountriesbyfetchapii.netlify.app/)
+Check out the live project here: [Asian Countries Project](https://asiancountriesbyfetchapi.netlify.app/)
 
 ## Features
 - Fetch and display information about Asian countries using the REST Countries API.
