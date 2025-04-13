@@ -1,10 +1,11 @@
 
 import './App.css'
-import Country from './component/country/country'
+import Country from './component/country/Country'
 
 function App() {
 
   return (
+    
     <>
 
       <div className="container">
@@ -14,8 +15,6 @@ function App() {
       <Country/>
            </div>
     
-
-
     </>
   )
 }

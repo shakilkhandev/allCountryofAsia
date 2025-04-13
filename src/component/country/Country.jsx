@@ -1,17 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
+
 function Country() {
   const [countries, setCountries] = useState([]);
   const [i, setI] = useState(10);
   const [loadItem, setLoadItem] = useState(true);
 
-  
-
-  // const [countryName, setCountryName] = useState();
-  // const [capital, setCapital] = useState();
-  // const [population, setPopulation] = useState();
-  // const [flag,setFlag] = useState();
 
   useEffect(() => {
     const data = fetch("https://restcountries.com/v3.1/region/asia");
@@ -31,11 +26,6 @@ function Country() {
   }, [ ]);
 
   
-
-   
-   
-  
-
   function loadCountries() {
 
     if (i < countries.length-10) {
