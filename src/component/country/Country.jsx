@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 function Country() {
   const [countries, setCountries] = useState([]);
-  const [i, setI] = useState(10);
+  const [i, setI] = useState(10);  //here i hold the current number of how many item will displayed from object
   const [loadItem, setLoadItem] = useState(true);
 
 
@@ -16,7 +16,7 @@ function Country() {
         return response.json();
       })
       .then((item) => {
-        const sortedItem =[...item].sort((a,b)=>a.name.common.localeCompare(b.name.common));
+        const sortedItem =[...item].sort((a,b)=>a.name.common.localeCompare(b.name.common));  //.sort()modify the orginal array , and localy compare method sort item alphabatically             
         setCountries(sortedItem);
       })
       .catch((error) => {
@@ -47,7 +47,7 @@ function Country() {
      
         <div className="parentContainer">
           <div className="flagContainer">
-            {countries.slice(0, i).map((item, index) => {
+            {countries.slice(0, i).map((item, index) => {  //sliced the object depend of i value so that that much of item will display only 
               return (
                 <div className="flag fade-in" key={index}>
                   <h1 key={index}>Country: {item.name.common} </h1>
